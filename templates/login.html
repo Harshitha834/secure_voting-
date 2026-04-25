@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+ 
+<div class="container",place="center">
+   
+<h1>Secure Voting Login</h1>
+
+<form method="POST">
+<input name="voter" placeholder="Voter ID">
+<input type="password" name="password" placeholder="Password">
+<button>Login</button>
+</form>
+
+<p class="error">{{error}}</p>
+</div>

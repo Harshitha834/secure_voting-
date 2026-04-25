@@ -1,0 +1,66 @@
+h1{
+    color:rgb(43, 255, 0);
+}
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg,#1d2671,#c33764);
+    height: 100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+}
+
+/* card container */
+.container{
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    padding:40px;
+    border-radius:20px;
+    width:300px;
+    text-align:center;
+    box-shadow:0 0 25px rgba(0,0,0,0.3);
+    animation: fadeIn 1s ease;
+}
+
+input,select{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:none;
+    border-radius:8px;
+    outline:none;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    background:linear-gradient(45deg,#00f2fe,#4facfe);
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 15px #4facfe;
+}
+
+h2{
+    margin-bottom:20px;
+}
+
+.error{
+    color:#ffb3b3;
+    font-size:14px;
+}
+
+/* animation */
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(20px);}
+    to{opacity:1; transform:translateY(0);}
+}

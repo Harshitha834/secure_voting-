@@ -1,0 +1,13 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<div class="container">
+<h2>Blockchain Votes</h2>
+
+{% for block in chain %}
+<p>
+Block {{block.index}} <br>
+Hash: {{block.hash[:20]}}...
+</p>
+<hr>
+{% endfor %}
+</div>
